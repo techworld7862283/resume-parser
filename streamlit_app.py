@@ -31,7 +31,7 @@ if not st.session_state.logged_in:
     if st.sidebar.button("Login"):
         if user == "admin" and pwd == "admin123":
             st.session_state.logged_in = True
-            st.experimental_rerun()
+            st.rerun()
         else:
             st.sidebar.error("Invalid credentials")
     st.stop()
