@@ -29,7 +29,7 @@ if not st.session_state.logged_in:
     pwd = st.sidebar.text_input("Password", type="password")
 
     if st.sidebar.button("Login"):
-        if user == "admin" and pwd == "admin123":
+        if user == "admin" and pwd == "Lahore@123":
             st.session_state.logged_in = True
             st.rerun()
         else:
